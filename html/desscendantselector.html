@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>combinators in css</title>
+
+    <style>
+        div p {
+            font-size: 20px;
+            color: red;
+            /*descendant selectors*/
+        }
+        
+        div>p {
+            font-size: 30px;
+            /*child-selectors*/
+            color: pink;
+        }
+        
+        div+span {
+            font-size: 10px;
+            /*adjacent siblings*/
+        }
+        
+        div~span {
+            font-size: 50px;
+            /*general siblings*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            paragraph 1
+        </p>
+        <p>
+            paragraph2
+        </p>
+        <span>
+            <p>paragraph 3</p>
+        
+        </span>
+    </div>
+    <span>
+        <p>
+            paragraph 4
+        </p>
+    </span>
+
+</body>
+
+</html>
